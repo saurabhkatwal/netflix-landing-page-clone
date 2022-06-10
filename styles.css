@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.showcase{
+    position: relative;
+    height: 95vh;
+    background-image: url('https://i.ibb.co/vXqDmnh/background.jpg');
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 40px 40px 70px 50px #000 inset,-40px -40px 70px 50px #000 inset;
+    padding-bottom: 70px;
+}
+.showcase::after{
+    content:'';
+    position: absolute;
+    height: 95vh;
+    width: 100%;
+    top:0;
+    left: 0;
+    background-color: rgba(1, 1, 1, 0.678);
+    z-index: 1;
+}
+.showcase-header{
+    position: relative;
+    padding-top: 20px;
+    z-index: 2;
+}
+.img-container{
+    position: relative;
+    text-align: center;
+}
+.img-container>img{
+    width:170px;
+}
+.btn-container{
+    position: absolute;
+    right:5%;
+    top:40%;
+}
+.btn-container>button{
+    background-color: red;
+    color:#fff;
+    font-size: 1rem;
+    padding: 6px 23px;
+    border-radius:5px;
+}
+.showcase-content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.content-container{
+    text-align: center;
+}
+.content-container>h1{
+    font-size: 4rem;
+    padding-bottom: 30px;
+}
+.content-container>p{
+    font-size: 1.7rem;
+    padding-bottom: 30px;
+}
+.content-container>button{
+    width: 90%;
+    font-size: 1.7rem;
+    padding: 16px 22px;
+    background-color: red;
+    color: #fff;
+    cursor:pointer;
+}
+.tabs{
+    background-color: #141414;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    padding:1% 15% 0 15%;
+}
+.tab i{
+    color: #999;
+    margin-bottom: 20px;
+    padding:50px 100px;
+}
+.tab p{
+color: #999;
+}
+.tab{
+    cursor:pointer;
+    /* margin:auto 5px; */
+    border-bottom:10px solid #141414;
+    transition: 0.6s ease;
+    padding-bottom: 20px;
+}
+/* .tab:hover{
+    border-bottom: 10px solid red;
+} */
+.tab-content{
+    text-align: center;
+}
+/* .tab-content-1{
+    display:  grid;
+    grid-template-columns: 2fr 1fr;
+} */
+.desc-img img{
+width: 100%;
+}
+.tab-content-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.tab-content-1 .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    font-size: 1.8rem;
+    align-items: flex-start;
+}
+.desc p{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.tab-content .desc-img{
+    justify-content: center;
+}
+.info-tabs{
+    padding:4% 15%;
+    background-color: #000;
+    color: #fff;
+}
+.w-30{
+    padding: 13px 16px;
+    font-size: 1rem;
+    background-color: red;
+    color:#fff;
+}
+.watch-desc{
+    display: flex;
+    align-items: center;
+}
+.watch-desc p{
+    width: 67%;
+    font-size: 1.8rem;
+    
+}
+.watch-desc button{
+    margin:0 auto;
+}
+.watch-tab{
+    padding:2% 15%;
+    background-color: #000;
+    color:#fff;
+}
+.w-c{
+    text-align: center;
+}
+.watch-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem;
+    padding-top: 40px;
+}
+.w-c img{
+    width: 300px;
+}
+.w-c p{
+    color:#999;
+}
+.w-c-title{
+    color: #fff !important;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.table-info{
+    padding:2% 15%;
+    background-color: #000;
+    color:#fff;
+}
+.title-t p{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.title-t button{
+    margin-bottom:20px;
+}
+.title-t{
+    text-align: center;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table tbody tr:nth-of-type(odd){
+    background-color: #222;
+}
+table tbody td{
+    color: #999;
+}
+table tbody tr td,th{
+    padding: 10px 14px;
+    text-align: center;
+}
+table tbody tr td:nth-of-type(1){
+    text-align: left !important;
+}
+.tab-in{
+    display: none;
+    transition: all 3s ease;
+}
+.footer{
+    background-color: #000;
+    color: #999;
+    padding: 50px 0;
+}
+.footer-cols a{
+    color: #999;
+    text-decoration: none;
+}
+.footer-cols li{
+    padding: 4px 12px;
+}
+.footer p{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.footer-cols{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
+}
+.footer-cols ul{
+    list-style: none;
+}
+
+@media(max-width:800px){
+.img-container{
+    text-align: left;
+}
+.img-container>img{
+    margin-left:30px;
+}
+table{
+    width:80%;
+    margin: auto;
+}
+table tbody tr td,th{
+    padding: 7px 10px;
+}
+}
+@media(max-width:700px){
+    .content-container>h1{
+        font-size: 2.3rem;
+    }
+    .content-container>p{
+        font-size: 1rem;
+        padding-bottom: 30px;
+    }
+    .content-container>button{
+        font-size: 1rem;
+        padding: 10px 13px;
+    }
+    .btn-container button{
+        font-size: 0.8rem;
+    }
+    .tab-content-1{
+        grid-template-columns: 1fr;
+
+    }
+    .tab-content-1 .desc{
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .desc p{
+        text-align: center !important;
+        font-size: 1.3rem;
+    }
+}
+
+
+@media(max-width:900px){
+    .tab{
+        cursor:pointer;
+        /* margin:auto 5px; */
+        border-bottom:7px solid #141414;
+        transition: 0.6s ease;
+        padding-bottom: 14px;
+        padding: 20px;
+    }
+    
+    .tabs{
+        padding:1% 15% 0 15%;
+    }
+    .tab i{
+        padding:20px 45px;
+        font-size: 30px;
+    }
+    .w-30{
+        padding: 8px 13px;
+        font-size: 0.8rem;
+        background-color: red;
+        color:#fff;
+    }
+    .desc p{
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .watch-content{
+        grid-template-columns: 1fr;
+    }
+    .watch-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        min-height: 200px;
+        /* align-items: center; */
+    }
+    .watch-desc p{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    .footer-cols{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
