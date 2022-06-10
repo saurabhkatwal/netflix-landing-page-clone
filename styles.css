@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body{
+    width: 100vw;
+}
 .showcase{
     position: relative;
     height: 95vh;
@@ -35,6 +38,9 @@
 }
 .img-container>img{
     width:170px;
+}
+button{
+    outline: none;
 }
 .btn-container{
     position: absolute;
@@ -287,6 +293,9 @@ table tbody tr td,th{
 
 
 @media(max-width:900px){
+    .showcase{
+        box-shadow: 20px 20px 50px 30px #000 inset,-20px -20px 50px 30px #000 inset;
+    }
     .tab{
         cursor:pointer;
         /* margin:auto 5px; */
