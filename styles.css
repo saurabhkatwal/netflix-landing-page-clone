@@ -226,7 +226,9 @@ table tbody tr td:nth-of-type(1){
 .footer{
     background-color: #000;
     color: #999;
-    padding: 50px 0;
+    padding: 50px 0px;
+    width:75%;
+    margin: auto;
 }
 .footer-cols a{
     color: #999;
@@ -236,12 +238,10 @@ table tbody tr td:nth-of-type(1){
     padding: 4px 12px;
 }
 .footer p{
-    width: 70%;
-    margin: auto;
     margin-bottom: 30px;
 }
 .footer-cols{
-    width: 70%;
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
