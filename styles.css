@@ -260,6 +260,9 @@ table tbody tr td:nth-of-type(1){
 }
 }
 @media(max-width:700px){
+    .w-c img{
+        width: 240px;
+    }
     .content-container>h1{
         font-size: 2.3rem;
     }
