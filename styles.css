@@ -1,9 +1,6 @@
 @media print{
-    img{
+    img,p,table{
 display:none;
-}
-    body{
-background-color:green;
 }
 }
 *{
